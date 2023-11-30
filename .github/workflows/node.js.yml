@@ -16,7 +16,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: 18
+        node-version: 14
 
     - name: Install Dependencies
       run: npm install
@@ -28,7 +28,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: build
-        path: build  # Change this to the actual build output directory
+        path: dist  # Change this to the actual build output directory
 
   deploy:
     runs-on: ubuntu-latest
@@ -41,7 +41,7 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: build
-        path: build  # Change this to the actual build output directory
+        path: dist  # Change this to the actual build output directory
 
     # Add deployment steps as needed, such as deploying to a hosting service like Netlify, Vercel, or GitHub Pages.
     # For example, deploying to Netlify:
