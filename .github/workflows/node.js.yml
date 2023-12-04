@@ -19,4 +19,5 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npm run build
-    - run: npm run serve
+    - run: npm install -g http-server
+    - run: http-server -p 3000 -c-1 dist
