@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <p>Hello world</p>
+      <p>Hello world deployed using ci cd</p>
     </>
   )
 }
