@@ -19,5 +19,11 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npm run build
-    - run: npm install -g http-server
-    - run: npm run serve
+
+  deploy:
+    runs-on: self-hosted
+    needs: build
+    steps:
+      - name: Deploy to server
+        run: npm run serve
+         
