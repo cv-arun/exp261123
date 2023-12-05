@@ -24,6 +24,11 @@ jobs:
     runs-on: self-hosted
     needs: build
     steps:
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.x'
+          cache: 'npm'
       - name: Deploy to server
         run: npm run serve
          
