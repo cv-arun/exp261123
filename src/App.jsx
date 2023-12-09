@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <p>Hello world deployed using ci cd v2</p>
+      <p>Hello world deployed using ci cd v2 and srving using ngnx</p>
     </>
   )
 }
