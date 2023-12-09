@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <p>Hello world deployed using ci cd v2 and srving using ngnx ...</p>
+      <p>ci cd for react+vite app using github action,ec2 and ngnx</p>
     </>
   )
 }
